@@ -1,0 +1,21 @@
+[
+{
+  "modid": "AC",
+  "name": "Apericraft",
+  "description": "An open source mod that plans to add as much as possible",
+  "version": "Pre-Release 0.0.1",
+  "url": "http://apericraft.yolasite.com/",
+  "updateUrl": "",
+  "authorList": [
+    "Preea",
+    "Sarainthian"
+  ],
+  "credits": "",
+  "logoFile": "Texture/Banner/Logo/logo.png",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
