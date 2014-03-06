@@ -1,4 +1,4 @@
-package com.apericraft.apericraft.proxy;
+package net.preea.apericraft.proxy;
 
 public class ClientProxy extends CommonProxy {
 
