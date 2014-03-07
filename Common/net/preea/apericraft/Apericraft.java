@@ -13,7 +13,13 @@ package net.preea.apericraft;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
 import net.preea.apericraft.block.CopperOre;
+import net.preea.apericraft.block.CopperBlock;
+import net.preea.apericraft.crafting.Shaped;
+import net.preea.apericraft.crafting.Shapeless;
+import net.preea.apericraft.crafting.Smelting;
+import net.preea.apericraft.items.CopperIngot;
 import net.preea.apericraft.lib.Reference;
 import net.preea.apericraft.proxy.CommonProxy;
 import cpw.mods.fml.common.Mod;
@@ -28,7 +34,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 
-
+//Initialization with forge
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
@@ -42,9 +48,14 @@ public class Apericraft {
 	public static CommonProxy proxy;
 	
 	//Block deceleration
-
 	public static Block CopperOre;
+	public static Block CopperBlock;
 	
+	//Item deceleration
+	public static Item CopperIngot;
+	
+	
+	//all event handlers load the mods at start of minecraft
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		
@@ -52,13 +63,25 @@ public class Apericraft {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event){
-	
+		
+		//Blocks
 		CopperOre = new CopperOre(500, Material.rock).setUnlocalizedName("CopperOre");
-		
 		GameRegistry.registerBlock (CopperOre, Reference.MOD_ID + "_" + CopperOre.getUnlocalizedName().substring(5));
-		
 		LanguageRegistry.addName(CopperOre, "Copper Ore");
 		
+		CopperBlock = new CopperBlock(501, Material.rock).setUnlocalizedName("CopperBlock");
+		GameRegistry.registerBlock (CopperBlock, Reference.MOD_ID + "_" + CopperBlock.getUnlocalizedName().substring(5));
+		LanguageRegistry.addName(CopperBlock, "Copper Block");
+		
+		//Items
+		CopperIngot = new CopperIngot(5000).setUnlocalizedName("CopperIngot");
+		LanguageRegistry.addName(CopperIngot, "Copper Ingot");
+		
+		//loading in recipes
+		Smelting.LoadRecipes();
+		Shapeless.LoadRecipes();
+		Shaped.LoadRecipes();
+
 	}
 		
 	@EventHandler
