@@ -13,12 +13,15 @@ package net.preea.apericraft;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.preea.apericraft.block.CopperOre;
 import net.preea.apericraft.block.CopperBlock;
 import net.preea.apericraft.crafting.Shaped;
 import net.preea.apericraft.crafting.Shapeless;
 import net.preea.apericraft.crafting.Smelting;
+import net.preea.apericraft.creativetabs.BlocksTab;
+import net.preea.apericraft.creativetabs.ItemsTab;
 import net.preea.apericraft.items.CopperIngot;
 import net.preea.apericraft.lib.Reference;
 import net.preea.apericraft.proxy.CommonProxy;
@@ -46,12 +49,15 @@ public class Apericraft {
 	
 	@SidedProxy(clientSide = "net.preea.apericraft.proxy.ClientProxy", serverSide = "net.preea.apericraft.proxy.CommonProxy")
 	public static CommonProxy proxy;
+	//Creative tabs
+	public static CreativeTabs tabApericraftBlocks = new BlocksTab(CreativeTabs.getNextID(), "BlocksTab");
+	public static CreativeTabs tabApericraftItems = new ItemsTab(CreativeTabs.getNextID(), "ItemsTab");
 	
-	//Block deceleration
+	//Blocks
 	public static Block CopperOre;
 	public static Block CopperBlock;
 	
-	//Item deceleration
+	//Items
 	public static Item CopperIngot;
 	
 	
