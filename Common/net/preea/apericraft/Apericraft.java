@@ -39,16 +39,15 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 //Initialization with forge
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
-
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 
 public class Apericraft {
+	@SidedProxy(clientSide = "net.preea.apericraft.proxy.ClientProxy", serverSide = "net.preea.apericraft.proxy.CommonProxy")
+	public static CommonProxy proxy;
 	
 	@Instance(Reference.MOD_ID)
 	public static Apericraft instance;
 	
-	@SidedProxy(clientSide = "net.preea.apericraft.proxy.ClientProxy", serverSide = "net.preea.apericraft.proxy.CommonProxy")
-	public static CommonProxy proxy;
 	//Creative tabs
 	public static CreativeTabs tabApericraftBlocks = new BlocksTab(CreativeTabs.getNextID(), "BlocksTab");
 	public static CreativeTabs tabApericraftItems = new ItemsTab(CreativeTabs.getNextID(), "ItemsTab");
@@ -69,6 +68,8 @@ public class Apericraft {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event){
+		//proxy
+		proxy.registerRenderInformation();
 		
 		//Blocks
 		CopperOre = new CopperOre(500, Material.rock).setUnlocalizedName("CopperOre");
