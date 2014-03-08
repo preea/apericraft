@@ -8,7 +8,7 @@ public class ItemsTab extends CreativeTabs{
 	public ItemsTab(int id, String string) {
 	super(id, string);
 	}
-	public int getTabItemIconIndex(){
+	public int getTabIconItemIndex(){
 	return Apericraft.CopperIngot.itemID;
 	}
 	public String getTranslatedTabLabel(){

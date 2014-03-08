@@ -13,8 +13,9 @@ public class CobaltBlock extends Block {
 	public CobaltBlock(int id, Material material) {
 		super(id, material);
 		this.setCreativeTab(Apericraft.tabApericraftBlocks);
-		this.setHardness(4);
-		this.setResistance(6);
+		this.setHardness(2.0F);
+		this.setResistance(5.0F);
+		this.setStepSound(Block.soundStoneFootstep);
 	}
 	@SideOnly(Side.CLIENT)
 		public void registerIcons(IconRegister par1IconRegister){
