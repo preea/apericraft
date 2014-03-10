@@ -19,22 +19,22 @@ public class EventManager implements IWorldGenerator{
 		case 1: generateEnd(world, random, chunkX * 16, chunkZ * 16);
 		}
 	}
-	private void generateOverWorld(World world, Random random, int x, int z) {
-		addOreSpawn(Apericraft.AluminiumOre, world, random, x, z, 16, 16, 5 + random.nextInt(5), 7, 1, 15);
-		addOreSpawn(Apericraft.BerylliumOre, world, random, x, z, 16, 16, 6 + random.nextInt(3), 8, 1, 60);
-		addOreSpawn(Apericraft.CeriumOre, world, random, x, z, 16, 16, 4 + random.nextInt(3), 7, 45, 60);
-		addOreSpawn(Apericraft.CobaltOre, world, random, x, z, 16, 16, 4 + random.nextInt(3), 5, 15, 50);
-		addOreSpawn(Apericraft.CopperOre, world, random, x, z, 16, 16, 5 + random.nextInt(6), 12, 1, 60);
-		addOreSpawn(Apericraft.LeadOre, world, random, x, z, 16, 16, 3 + random.nextInt(3), 6, 1, 30);
-		addOreSpawn(Apericraft.NickleOre, world, random, x, z, 16, 16, 4 + random.nextInt(3), 5, 15, 30);
-		addOreSpawn(Apericraft.PlatinumOre, world, random, x, z, 16, 16, 2 + random.nextInt(2), 5, 1, 15);
-		addOreSpawn(Apericraft.SeleniumOre, world, random, x, z, 16, 16, 3 + random.nextInt(3), 6, 1, 30);
-		addOreSpawn(Apericraft.SilverOre, world, random, x, z, 16, 16, 4 + random.nextInt(3), 5, 15, 50);
-		addOreSpawn(Apericraft.TelluriumOre, world, random, x, z, 16, 16, 6 + random.nextInt(2), 5, 15, 50);
-		addOreSpawn(Apericraft.TinOre, world, random, x, z, 16, 16, 5 + random.nextInt(6), 10, 1, 60);
-		addOreSpawn(Apericraft.TitaniumOre, world, random, x, z, 16, 16, 2 + random.nextInt(2), 5, 1, 15);
-		addOreSpawn(Apericraft.TungstenOre, world, random, x, z, 16, 16, 6 + random.nextInt(3), 6, 25, 50);
-		addOreSpawn(Apericraft.ZirconiumOre, world, random, x, z, 16, 16, 3 + random.nextInt(2), 5, 1, 25);
+	private void generateOverWorld(World world, Random random, int x, int z) { //   Max Vein Size       , Spawn ,  minY ,  maxY );
+		addOreSpawn(Apericraft.AluminiumOre, world, random, x, z, 16, 16, 		5 + random.nextInt(5)	, 	0	, 	1	, 	30	);
+		addOreSpawn(Apericraft.BerylliumOre, world, random, x, z, 16, 16, 		6 + random.nextInt(3)	, 	0	, 	1	, 	80	);
+		addOreSpawn(Apericraft.CeriumOre, world, random, x, z, 16, 16, 			4 + random.nextInt(3)	, 	12	, 	45	, 	80	);
+		addOreSpawn(Apericraft.CobaltOre, world, random, x, z, 16, 16, 			4 + random.nextInt(3)	, 	0	, 	15	, 	50	);
+		addOreSpawn(Apericraft.CopperOre, world, random, x, z, 16, 16, 			5 + random.nextInt(6)	, 	24	, 	1	, 	80	);
+		addOreSpawn(Apericraft.LeadOre, world, random, x, z, 16, 16, 			3 + random.nextInt(3)	, 	12	, 	1	, 	30	);
+		addOreSpawn(Apericraft.NickleOre, world, random, x, z, 16, 16, 			4 + random.nextInt(3)	, 	12	, 	15	, 	30	);
+		addOreSpawn(Apericraft.PlatinumOre, world, random, x, z, 16, 16, 		2 + random.nextInt(2)	, 	12	, 	1	, 	15	);
+		addOreSpawn(Apericraft.SeleniumOre, world, random, x, z, 16, 16, 		3 + random.nextInt(3)	, 	0	, 	1	, 	30	);
+		addOreSpawn(Apericraft.SilverOre, world, random, x, z, 16, 16, 			4 + random.nextInt(3)	, 	12	, 	15	, 	50	);
+		addOreSpawn(Apericraft.TelluriumOre, world, random, x, z, 16, 16, 		6 + random.nextInt(2)	, 	0	, 	15	, 	50	);
+		addOreSpawn(Apericraft.TinOre, world, random, x, z, 16, 16, 			5 + random.nextInt(6)	, 	24	, 	1	, 	80	);
+		addOreSpawn(Apericraft.TitaniumOre, world, random, x, z, 16, 16, 		2 + random.nextInt(2)	, 	8	, 	1	, 	15	);
+		addOreSpawn(Apericraft.TungstenOre, world, random, x, z, 16, 16, 		6 + random.nextInt(3)	, 	0	, 	25	, 	50	);
+		addOreSpawn(Apericraft.ZirconiumOre, world, random, x, z, 16, 16, 		3 + random.nextInt(2)	, 	0	, 	1	, 	25	);
 		
 	}
 
