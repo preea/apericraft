@@ -2,9 +2,14 @@ package net.preea.apericraft;
 
 import com.jcraft.jorbis.Block;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
+import net.preea.apericraft.creativetabs.tabABlocks;
+import net.preea.apericraft.creativetabs.tabAItems;
+import net.preea.apericraft.creativetabs.tabATools;
 import net.preea.apericraft.lib.Reference;
 import net.preea.apericraft.loadhandler.LoadBlocks;
+import net.preea.apericraft.loadhandler.LoadItems;
 import net.preea.apericraft.world.WorldGeneratorApericraft;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -15,11 +20,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class Apericraft{
-	
+
     @EventHandler
     public void preinit(FMLPreInitializationEvent event){
     	LoadBlocks.ore();
-    	
+    	LoadItems.Ingots();
     	GameRegistry.registerWorldGenerator(new WorldGeneratorApericraft(),0);
     }
     @EventHandler

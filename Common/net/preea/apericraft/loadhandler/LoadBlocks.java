@@ -4,6 +4,9 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.preea.apericraft.blocks.Aluminium_Ore;
 import net.preea.apericraft.blocks.Copper_Ore;
 import net.preea.apericraft.blocks.Lead_Ore;
+import net.preea.apericraft.blocks.Rubber_Leaf;
+import net.preea.apericraft.blocks.Rubber_Log;
+import net.preea.apericraft.blocks.Rubber_Sapling;
 import net.preea.apericraft.blocks.Silver_Ore;
 import net.preea.apericraft.blocks.Tin_Ore;
 import net.preea.apericraft.blocks.Titanium_Ore;
@@ -13,7 +16,7 @@ public class LoadBlocks {
 public static void ore(){
  ABlocks.Aluminium_Ore = new Aluminium_Ore().setBlockName("AluminiumOre");
  GameRegistry.registerBlock(ABlocks.Aluminium_Ore, "AluminiumOre");
-
+ 
  ABlocks.Tin_Ore = new Tin_Ore().setBlockName("TinOre");
  GameRegistry.registerBlock(ABlocks.Tin_Ore, "TinOre");
  

@@ -4,7 +4,7 @@ import net.minecraft.block.Block;
 
 
 public class ABlocks {
-	//Ore
+	//Ores
 	public static Block Aluminium_Ore;
 	public static Block Tin_Ore;
 	public static Block Copper_Ore;

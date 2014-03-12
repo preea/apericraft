@@ -1,3 +1,6 @@
+itemGroup.TabABlocks=Apericraft - Blocks
+itemGroup.TabAItems=Apericraft - Items
+itemGroup.TabATools=Apericraft - Tools
 
 tile.AluminiumOre.name=Aluminium Ore
 tile.TinOre.name=Tin Ore
@@ -5,3 +8,10 @@ tile.CopperOre.name=Copper Ore
 tile.LeadOre.name=Lead Ore
 tile.SilverOre.name=Silver Ore
 tile.TitaniumOre.name=Titanium Ore
+
+item.AluminiumIngot.name=Aluminium Ingot
+item.TinIngot.name=Tin Ingot
+item.CopperIngot.name=Copper Ingot
+item.LeadIngot.name=Lead Ingot
+item.SilverIngot.name=Silver Ingot
+item.TitaniumIngot.name=Titanium Ingot
