@@ -11,14 +11,13 @@ import cpw.mods.fml.common.IWorldGenerator;
 
 public class WorldGeneratorApericraft implements IWorldGenerator {
 
-	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
 		switch(world.provider.dimensionId){
 		case -1: generateNeather(world, random, chunkX * 16, chunkZ * 16);
 		case 0: generateOverworld(world, random, chunkX * 16, chunkZ * 16);
 		case 1: generateEnd(world, random, chunkX * 16, chunkZ * 16);
 		}}
-	private void generateOverworld(World world, Random random, int x, int z) {
+private void generateOverworld(World world, Random random, int x, int z) {
 		//																		   VeinSize	    	,SpRate ,  MinY	,   MaxY);
 		addOreSpawn(ABlocks.Aluminium_Ore, world, random, x, z, 16, 16, 	5 + random.nextInt(6)	, 	5	, 	1	, 	45	);
 		addOreSpawn(ABlocks.Tin_Ore, world, random, x, z, 16, 16, 			7 + random.nextInt(4)	, 	21	, 	1	, 	150	);
@@ -26,6 +25,7 @@ public class WorldGeneratorApericraft implements IWorldGenerator {
 		addOreSpawn(ABlocks.Silver_Ore, world, random, x, z, 16, 16, 		5 + random.nextInt(4)	, 	11	, 	1	, 	40	);
 		addOreSpawn(ABlocks.Lead_Ore, world, random, x, z, 16, 16, 			5 + random.nextInt(3)	, 	11	, 	1	, 	40	);
 		addOreSpawn(ABlocks.Titanium_Ore, world, random, x, z, 16, 16, 		3 + random.nextInt(3)	, 	3	,	1	, 	25	);
+		addOreSpawn(ABlocks.Greenstone_Ore, world, random, x, z, 16, 16, 	5 + random.nextInt(3)	, 	14	,	1	, 	35	);
 		
 	}
 	private void generateNeather(World world, Random random, int x, int z) {

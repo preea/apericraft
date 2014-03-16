@@ -8,6 +8,16 @@ tile.CopperOre.name=Copper Ore
 tile.LeadOre.name=Lead Ore
 tile.SilverOre.name=Silver Ore
 tile.TitaniumOre.name=Titanium Ore
+tile.GreenstoneOre.name=Greenstone Ore
+tile.LightGreenstoneOre.name=Greenstone Ore
+
+tile.AluminiumBlock.name=Aluminium Block
+tile.TinBlock.name=Tin Block
+tile.CopperBlock.name=Copper Block
+tile.LeadBlock.name=Lead Block
+tile.SilverBlock.name=Silver Block
+tile.TitaniumBlock.name=Titanium Block
+tile.GreenstoneBlock.name=Greenstone Block
 
 item.AluminiumIngot.name=Aluminium Ingot
 item.TinIngot.name=Tin Ingot
@@ -15,3 +25,4 @@ item.CopperIngot.name=Copper Ingot
 item.LeadIngot.name=Lead Ingot
 item.SilverIngot.name=Silver Ingot
 item.TitaniumIngot.name=Titanium Ingot
+item.Greenstone.name=Greenstone

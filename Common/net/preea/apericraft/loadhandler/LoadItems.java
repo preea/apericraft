@@ -6,6 +6,7 @@ import net.preea.apericraft.declarations.ABlocks;
 import net.preea.apericraft.declarations.AItems;
 import net.preea.apericraft.items.Aluminium_Ingot;
 import net.preea.apericraft.items.Copper_Ingot;
+import net.preea.apericraft.items.Greenstone;
 import net.preea.apericraft.items.Lead_Ingot;
 import net.preea.apericraft.items.Silver_Ingot;
 import net.preea.apericraft.items.Tin_Ingot;
@@ -30,5 +31,10 @@ public static void Ingots(){
 	
 	AItems.Titanium_Ingot = new Titanium_Ingot();
 	GameRegistry.registerItem(AItems.Titanium_Ingot, "TitaniumIngot");
+}
+public static void Dusts() {
+	AItems.Greenstone = new Greenstone();
+	GameRegistry.registerItem(AItems.Greenstone, "Greenstone");
+
 }
 }

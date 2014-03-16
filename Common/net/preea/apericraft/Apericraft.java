@@ -6,9 +6,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.preea.apericraft.creativetabs.tabABlocks;
 import net.preea.apericraft.creativetabs.tabAItems;
-import net.preea.apericraft.creativetabs.tabATools;
 import net.preea.apericraft.lib.Reference;
 import net.preea.apericraft.loadhandler.LoadBlocks;
+import net.preea.apericraft.loadhandler.LoadCrafting;
 import net.preea.apericraft.loadhandler.LoadItems;
 import net.preea.apericraft.world.WorldGeneratorApericraft;
 import cpw.mods.fml.common.Mod;
@@ -23,8 +23,17 @@ public class Apericraft{
 
     @EventHandler
     public void preinit(FMLPreInitializationEvent event){
+    	//Blocks
     	LoadBlocks.ore();
+    	LoadBlocks.blocks();
+    	//Items
     	LoadItems.Ingots();
+    	LoadItems.Dusts();
+    	//Crafting
+    	LoadCrafting.Shaped();
+    	LoadCrafting.Shapeless();
+    	LoadCrafting.Furnace();
+    	//World Generation
     	GameRegistry.registerWorldGenerator(new WorldGeneratorApericraft(),0);
     }
     @EventHandler
