@@ -3,6 +3,7 @@ package net.preea.apericraft.world;
 import java.util.Random;
 
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -17,16 +18,18 @@ public class WorldGeneratorApericraft implements IWorldGenerator {
 		case 0: generateOverworld(world, random, chunkX * 16, chunkZ * 16);
 		case 1: generateEnd(world, random, chunkX * 16, chunkZ * 16);
 		}}
+
 private void generateOverworld(World world, Random random, int x, int z) {
 		//																		   VeinSize	    	,SpRate ,  MinY	,   MaxY);
-		addOreSpawn(ABlocks.Aluminium_Ore, world, random, x, z, 16, 16, 	5 + random.nextInt(6)	, 	5	, 	1	, 	45	);
-		addOreSpawn(ABlocks.Tin_Ore, world, random, x, z, 16, 16, 			7 + random.nextInt(4)	, 	21	, 	1	, 	150	);
-		addOreSpawn(ABlocks.Copper_Ore, world, random, x, z, 16, 16, 		7 + random.nextInt(5)	, 	21	, 	1	, 	150	);
-		addOreSpawn(ABlocks.Silver_Ore, world, random, x, z, 16, 16, 		5 + random.nextInt(4)	, 	11	, 	1	, 	40	);
-		addOreSpawn(ABlocks.Lead_Ore, world, random, x, z, 16, 16, 			5 + random.nextInt(3)	, 	11	, 	1	, 	40	);
-		addOreSpawn(ABlocks.Titanium_Ore, world, random, x, z, 16, 16, 		3 + random.nextInt(3)	, 	3	,	1	, 	25	);
-		addOreSpawn(ABlocks.Greenstone_Ore, world, random, x, z, 16, 16, 	5 + random.nextInt(3)	, 	14	,	1	, 	35	);
-		
+		addOreSpawn(ABlocks.Aluminium_Ore, world, random, x, z, 16, 16, 	5 + random.nextInt(6)	, 	11	, 	1	, 	45	);
+		addOreSpawn(ABlocks.Tin_Ore, world, random, x, z, 16, 16, 			7 + random.nextInt(4)	, 	29	, 	1	, 	150	);
+		addOreSpawn(ABlocks.Copper_Ore, world, random, x, z, 16, 16, 		7 + random.nextInt(5)	, 	29	, 	1	, 	150	);
+		addOreSpawn(ABlocks.Silver_Ore, world, random, x, z, 16, 16, 		5 + random.nextInt(4)	, 	12	, 	1	, 	40	);
+		addOreSpawn(ABlocks.Lead_Ore, world, random, x, z, 16, 16, 			5 + random.nextInt(3)	, 	12	, 	1	, 	40	);
+		addOreSpawn(ABlocks.Titanium_Ore, world, random, x, z, 16, 16, 		3 + random.nextInt(3)	, 	4	,	1	, 	25	);
+		addOreSpawn(ABlocks.Greenstone_Ore, world, random, x, z, 16, 16, 	5 + random.nextInt(3)	, 	9	,	1	, 	35	);
+		addOreSpawn(Blocks.diamond_ore, world, random, x, z, 16, 16,		4 + random.nextInt(2)	, 	4	,	1	,	20	);
+		addOreSpawn(Blocks.iron_ore, world, random, x, z, 16, 16,			6 + random.nextInt(2)	, 	20	,	1	,	150	);
 	}
 	private void generateNeather(World world, Random random, int x, int z) {
 		

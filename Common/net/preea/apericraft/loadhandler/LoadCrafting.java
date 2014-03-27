@@ -1,5 +1,6 @@
 package net.preea.apericraft.loadhandler;
 
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.preea.apericraft.declarations.ABlocks;
 import net.preea.apericraft.declarations.AItems;
@@ -13,6 +14,44 @@ public class LoadCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(ABlocks.Silver_Block), new Object[]{"XXX","XXX","XXX",'X',AItems.Silver_Ingot});
 		GameRegistry.addShapedRecipe(new ItemStack(ABlocks.Tin_Block), new Object[]{"XXX","XXX","XXX",'X',AItems.Tin_Ingot});
 		GameRegistry.addShapedRecipe(new ItemStack(ABlocks.Titanium_Block), new Object[]{"XXX","XXX","XXX",'X',AItems.Titanium_Ingot});
+		GameRegistry.addShapedRecipe(new ItemStack(ABlocks.Greenstone_Block), new Object[]{"XXX","XXX","XXX",'X',AItems.Greenstone});
+	//Swords
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Aluminium_Sword), new Object[]{"X","X","S",'X',AItems.Aluminium_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Copper_Sword), new Object[]{"X","X","S",'X',AItems.Copper_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Lead_Sword), new Object[]{"X","X","S",'X',AItems.Lead_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Silver_Sword), new Object[]{"X","X","S",'X',AItems.Silver_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Tin_Sword), new Object[]{"X","X","S",'X',AItems.Tin_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Titanium_Sword), new Object[]{"X","X","S",'X',AItems.Titanium_Ingot, 'S', Items.stick});
+	//Pickaxes
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Aluminium_Pickaxe), new Object[]{"XXX"," S "," S ",'X',AItems.Aluminium_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Copper_Pickaxe), new Object[]{"XXX"," S "," S ",'X',AItems.Copper_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Lead_Pickaxe), new Object[]{"XXX"," S "," S ",'X',AItems.Lead_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Silver_Pickaxe), new Object[]{"XXX"," S "," S ",'X',AItems.Silver_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Tin_Pickaxe), new Object[]{"XXX"," S "," S ",'X',AItems.Tin_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Titanium_Pickaxe), new Object[]{"XXX"," S "," S ",'X',AItems.Titanium_Ingot, 'S', Items.stick});
+	//Axes
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Aluminium_Axe), new Object[]{"XX","XS"," S",'X',AItems.Aluminium_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Copper_Axe), new Object[]{"XX","XS"," S",'X',AItems.Copper_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Lead_Axe), new Object[]{"XX","XS"," S",'X',AItems.Lead_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Silver_Axe), new Object[]{"XX","XS"," S",'X',AItems.Silver_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Tin_Axe), new Object[]{"XX","XS"," S",'X',AItems.Tin_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Titanium_Axe), new Object[]{"XX","XS"," S",'X',AItems.Titanium_Ingot, 'S', Items.stick});
+	//Spades
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Aluminium_Spade), new Object[]{"X","S","S",'X',AItems.Aluminium_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Copper_Spade), new Object[]{"X","S","S",'X',AItems.Copper_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Lead_Spade), new Object[]{"X","S","S",'X',AItems.Lead_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Silver_Spade), new Object[]{"X","S","S",'X',AItems.Silver_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Tin_Spade), new Object[]{"X","S","S",'X',AItems.Tin_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Titanium_Spade), new Object[]{"X","S","S",'X',AItems.Titanium_Ingot, 'S', Items.stick});
+	//Hoes
+		
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Aluminium_Hoe), new Object[]{"XX"," S"," S",'X',AItems.Aluminium_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Copper_Hoe), new Object[]{"XX"," S"," S",'X',AItems.Copper_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Lead_Hoe), new Object[]{"XX"," S"," S",'X',AItems.Lead_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Silver_Hoe), new Object[]{"XX"," S"," S",'X',AItems.Silver_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Tin_Hoe), new Object[]{"XX"," S"," S",'X',AItems.Tin_Ingot, 'S', Items.stick});
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Titanium_Hoe), new Object[]{"XX"," S"," S",'X',AItems.Titanium_Ingot, 'S', Items.stick});
+
 	}
 	public static void Shapeless(){	
 		GameRegistry.addShapelessRecipe(new ItemStack(AItems.Aluminium_Ingot, 9), new Object[]{new ItemStack(ABlocks.Aluminium_Block)});
@@ -21,6 +60,7 @@ public class LoadCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(AItems.Silver_Ingot, 9), new Object[]{new ItemStack(ABlocks.Silver_Block)});
 		GameRegistry.addShapelessRecipe(new ItemStack(AItems.Tin_Ingot, 9), new Object[]{new ItemStack(ABlocks.Tin_Block)});
 		GameRegistry.addShapelessRecipe(new ItemStack(AItems.Titanium_Ingot, 9), new Object[]{new ItemStack(ABlocks.Titanium_Block)});
+		GameRegistry.addShapelessRecipe(new ItemStack(AItems.Greenstone, 9), new Object[]{new ItemStack(ABlocks.Greenstone_Block)});
 		
 	}
 	public static void Furnace(){

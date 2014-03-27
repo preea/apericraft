@@ -20,4 +20,6 @@ public class ABlocks {
 	public static Block Lead_Block;
 	public static Block Silver_Block;
 	public static Block Titanium_Block;
-	}
+	public static Block Greenstone_Block;
+
+}

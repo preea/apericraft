@@ -5,6 +5,7 @@ import net.preea.apericraft.blocks.Aluminium_Block;
 import net.preea.apericraft.blocks.Aluminium_Ore;
 import net.preea.apericraft.blocks.Copper_Block;
 import net.preea.apericraft.blocks.Copper_Ore;
+import net.preea.apericraft.blocks.Greenstone_Block;
 import net.preea.apericraft.blocks.Greenstone_Ore;
 import net.preea.apericraft.blocks.Lead_Block;
 import net.preea.apericraft.blocks.Lead_Ore;
@@ -44,23 +45,26 @@ public static void ore(){
  GameRegistry.registerBlock(ABlocks.Light_Greenstone_Ore, "LightGreenstoneOre");
 }
 public static void blocks(){
-	 ABlocks.Aluminium_Block = new Aluminium_Block().setBlockName("AluminiumBlock");
-	 GameRegistry.registerBlock(ABlocks.Aluminium_Block, "AluminiumBlock");
+ ABlocks.Aluminium_Block = new Aluminium_Block().setBlockName("AluminiumBlock");
+ GameRegistry.registerBlock(ABlocks.Aluminium_Block, "AluminiumBlock");
 	 
-	 ABlocks.Tin_Block = new Tin_Block().setBlockName("TinBlock");
-	 GameRegistry.registerBlock(ABlocks.Tin_Block, "TinBlock");
+ ABlocks.Tin_Block = new Tin_Block().setBlockName("TinBlock");
+ GameRegistry.registerBlock(ABlocks.Tin_Block, "TinBlock");
 	 
-	 ABlocks.Copper_Block = new Copper_Block().setBlockName("CopperBlock");
-	 GameRegistry.registerBlock(ABlocks.Copper_Block, "CopperBlock");
+ ABlocks.Copper_Block = new Copper_Block().setBlockName("CopperBlock");
+ GameRegistry.registerBlock(ABlocks.Copper_Block, "CopperBlock");
 	 
-	 ABlocks.Lead_Block = new Lead_Block().setBlockName("LeadBlock");
-	 GameRegistry.registerBlock(ABlocks.Lead_Block, "LeadBlock");
+ ABlocks.Lead_Block = new Lead_Block().setBlockName("LeadBlock");
+ GameRegistry.registerBlock(ABlocks.Lead_Block, "LeadBlock");
 	 
-	 ABlocks.Silver_Block = new Silver_Block().setBlockName("SilverBlock");
-	 GameRegistry.registerBlock(ABlocks.Silver_Block, "SilverBlock");
+ ABlocks.Silver_Block = new Silver_Block().setBlockName("SilverBlock");
+ GameRegistry.registerBlock(ABlocks.Silver_Block, "SilverBlock");
 	 
-	 ABlocks.Titanium_Block = new Titanium_Block().setBlockName("TitaniumBlock");
-	 GameRegistry.registerBlock(ABlocks.Titanium_Block, "TitaniumBlock");
+ ABlocks.Titanium_Block = new Titanium_Block().setBlockName("TitaniumBlock");
+ GameRegistry.registerBlock(ABlocks.Titanium_Block, "TitaniumBlock");
+ 
+ ABlocks.Greenstone_Block = new Greenstone_Block().setBlockName("GreenstoneBlock");
+ GameRegistry.registerBlock(ABlocks.Greenstone_Block, "GreenstoneBlock");
 }
 
 }

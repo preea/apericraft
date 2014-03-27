@@ -7,6 +7,7 @@ import net.minecraft.init.Blocks;
 import net.preea.apericraft.creativetabs.tabABlocks;
 import net.preea.apericraft.creativetabs.tabAItems;
 import net.preea.apericraft.lib.Reference;
+import net.preea.apericraft.loadhandler.LoadBiomes;
 import net.preea.apericraft.loadhandler.LoadBlocks;
 import net.preea.apericraft.loadhandler.LoadCrafting;
 import net.preea.apericraft.loadhandler.LoadItems;
@@ -29,6 +30,11 @@ public class Apericraft{
     	//Items
     	LoadItems.Ingots();
     	LoadItems.Dusts();
+    	LoadItems.Swords();
+    	LoadItems.Spades();
+    	LoadItems.Pickaxes();
+    	LoadItems.Hoes();
+    	LoadItems.Axes();
     	//Crafting
     	LoadCrafting.Shaped();
     	LoadCrafting.Shapeless();
