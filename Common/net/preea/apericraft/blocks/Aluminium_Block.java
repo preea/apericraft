@@ -5,6 +5,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.StatCollector;
 import net.preea.apericraft.declarations.ACreativeTabs;
 import net.preea.apericraft.lib.Reference;
 

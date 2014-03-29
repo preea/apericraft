@@ -6,8 +6,8 @@ import net.preea.apericraft.declarations.ABlocks;
 
 public class tabABlocks extends CreativeTabs {
 
-	public tabABlocks(int par1, String par2Str) {
-		super(par1, par2Str);
+	public tabABlocks(int par1, String string) {
+		super(par1, string);
 	}
 
 	@Override

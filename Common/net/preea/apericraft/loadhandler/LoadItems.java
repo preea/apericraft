@@ -1,6 +1,15 @@
 package net.preea.apericraft.loadhandler;
 
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemSeedFood;
+import net.minecraft.item.ItemSeeds;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
+import net.preea.apericraft.armor.AluminiumArmor;
+import net.preea.apericraft.declarations.AArmorMaterial;
+import net.preea.apericraft.declarations.ABlocks;
+import net.preea.apericraft.declarations.ACreativeTabs;
 import net.preea.apericraft.declarations.AItems;
 import net.preea.apericraft.declarations.AToolMaterial;
 import net.preea.apericraft.items.Aluminium_Axe;
@@ -9,12 +18,15 @@ import net.preea.apericraft.items.Aluminium_Ingot;
 import net.preea.apericraft.items.Aluminium_Pickaxe;
 import net.preea.apericraft.items.Aluminium_Spade;
 import net.preea.apericraft.items.Aluminium_Sword;
+import net.preea.apericraft.items.CookedCorn;
 import net.preea.apericraft.items.Copper_Axe;
 import net.preea.apericraft.items.Copper_Hoe;
 import net.preea.apericraft.items.Copper_Ingot;
 import net.preea.apericraft.items.Copper_Pickaxe;
 import net.preea.apericraft.items.Copper_Spade;
 import net.preea.apericraft.items.Copper_Sword;
+import net.preea.apericraft.items.Corn;
+import net.preea.apericraft.items.CornSeeds;
 import net.preea.apericraft.items.Greenstone;
 import net.preea.apericraft.items.Lead_Axe;
 import net.preea.apericraft.items.Lead_Hoe;
@@ -40,6 +52,7 @@ import net.preea.apericraft.items.Titanium_Ingot;
 import net.preea.apericraft.items.Titanium_Pickaxe;
 import net.preea.apericraft.items.Titanium_Spade;
 import net.preea.apericraft.items.Titanium_Sword;
+import net.preea.apericraft.lib.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class LoadItems {
@@ -162,4 +175,34 @@ public static void Spades(){
 	AItems.Titanium_Spade = new Titanium_Spade(AToolMaterial.TITANIUM);
 	GameRegistry.registerItem(AItems.Titanium_Spade, "TitaniumSade");
 }
+public static void Seeds(){
+	AItems.Corn_Seed = new CornSeeds(ABlocks.Corn_Block,ABlocks.Green_Infused_Soil);
+	GameRegistry.registerItem(AItems.Corn_Seed, "CornSeed");
+	MinecraftForge.addGrassSeed(new ItemStack(AItems.Corn_Seed), 5);
+}
+public static void Food(){
+	AItems.Corn = new Corn();
+	GameRegistry.registerItem(AItems.Corn, "Corn");
+	
+	AItems.CookedCorn = new CookedCorn();
+	GameRegistry.registerItem(AItems.CookedCorn, "CookedCorn");
+}
+public static void Armor_Helmet(){
+	AItems.Aluminium_Helmet = new AluminiumArmor(AArmorMaterial.ALUMINIUM, 5, 0).setUnlocalizedName("AluminiumHelmet").setCreativeTab(ACreativeTabs.TabATools);
+	GameRegistry.registerItem(AItems.Aluminium_Helmet, "Aluminium_Helmet");
+}
+public static void Armor_Chestplate(){
+	AItems.Aluminium_Chestplate = new AluminiumArmor(AArmorMaterial.ALUMINIUM, 5, 1).setUnlocalizedName("AluminiumChestplate").setCreativeTab(ACreativeTabs.TabATools);
+	GameRegistry.registerItem(AItems.Aluminium_Chestplate, "Aluminium_Chestplate");
+}
+public static void Armor_Legs(){
+	AItems.Aluminium_Legs = new AluminiumArmor(AArmorMaterial.ALUMINIUM, 5, 2).setUnlocalizedName("AluminiumLegs").setCreativeTab(ACreativeTabs.TabATools);
+	GameRegistry.registerItem(AItems.Aluminium_Legs, "Aluminium_Legs");
+}
+public static void Armor_Boots(){
+	AItems.Aluminium_Boots = new AluminiumArmor(AArmorMaterial.ALUMINIUM, 5, 3).setUnlocalizedName("AluminiumBoots").setCreativeTab(ACreativeTabs.TabATools);
+	GameRegistry.registerItem(AItems.Aluminium_Boots, "Aluminium_Boots");
+}
+
+
 }

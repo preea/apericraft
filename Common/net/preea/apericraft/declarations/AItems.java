@@ -1,6 +1,7 @@
 package net.preea.apericraft.declarations;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
 
 public class AItems {
 	//ingots
@@ -47,5 +48,15 @@ public class AItems {
 	public static Item Lead_Sword;
 	public static Item Silver_Sword;
 	public static Item Titanium_Sword;
-
+	//Crops
+	public static Item Corn_Seed;
+	//Food
+	public static Item Corn;
+	public static Item CookedCorn;
+	//Armor
+	public static Item Aluminium_Helmet;
+	public static Item Aluminium_Chestplate;
+	public static Item Aluminium_Legs;
+	public static Item Aluminium_Boots;
+	
 }

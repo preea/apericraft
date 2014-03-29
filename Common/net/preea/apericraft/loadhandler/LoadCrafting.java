@@ -51,9 +51,17 @@ public class LoadCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(AItems.Silver_Hoe), new Object[]{"XX"," S"," S",'X',AItems.Silver_Ingot, 'S', Items.stick});
 		GameRegistry.addShapedRecipe(new ItemStack(AItems.Tin_Hoe), new Object[]{"XX"," S"," S",'X',AItems.Tin_Ingot, 'S', Items.stick});
 		GameRegistry.addShapedRecipe(new ItemStack(AItems.Titanium_Hoe), new Object[]{"XX"," S"," S",'X',AItems.Titanium_Ingot, 'S', Items.stick});
-
+	//Helmets
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Aluminium_Helmet), new Object[]{"XXX","X X",'X',AItems.Aluminium_Ingot,});
+	//Chestplates
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Aluminium_Chestplate), new Object[]{"X X","XXX", "XXX",'X',AItems.Aluminium_Ingot,});
+	//Leggings
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Aluminium_Legs), new Object[]{"XXX","X X", "X X",'X',AItems.Aluminium_Ingot,});
+	//Boots
+		GameRegistry.addShapedRecipe(new ItemStack(AItems.Aluminium_Boots), new Object[]{"X X","X X",'X',AItems.Aluminium_Ingot,});
 	}
 	public static void Shapeless(){	
+	//Blocks
 		GameRegistry.addShapelessRecipe(new ItemStack(AItems.Aluminium_Ingot, 9), new Object[]{new ItemStack(ABlocks.Aluminium_Block)});
 		GameRegistry.addShapelessRecipe(new ItemStack(AItems.Copper_Ingot, 9), new Object[]{new ItemStack(ABlocks.Copper_Block)});
 		GameRegistry.addShapelessRecipe(new ItemStack(AItems.Lead_Ingot, 9), new Object[]{new ItemStack(ABlocks.Lead_Block)});
@@ -61,14 +69,16 @@ public class LoadCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(AItems.Tin_Ingot, 9), new Object[]{new ItemStack(ABlocks.Tin_Block)});
 		GameRegistry.addShapelessRecipe(new ItemStack(AItems.Titanium_Ingot, 9), new Object[]{new ItemStack(ABlocks.Titanium_Block)});
 		GameRegistry.addShapelessRecipe(new ItemStack(AItems.Greenstone, 9), new Object[]{new ItemStack(ABlocks.Greenstone_Block)});
-		
 	}
 	public static void Furnace(){
+	//Ingots
 		GameRegistry.addSmelting(ABlocks.Aluminium_Ore,new ItemStack(AItems.Aluminium_Ingot), 0.3F);
 		GameRegistry.addSmelting(ABlocks.Copper_Ore,new ItemStack(AItems.Copper_Ingot), 0.3F);
 		GameRegistry.addSmelting(ABlocks.Lead_Ore,new ItemStack(AItems.Lead_Ingot), 0.3F);
 		GameRegistry.addSmelting(ABlocks.Silver_Ore,new ItemStack(AItems.Silver_Ingot), 0.3F);
 		GameRegistry.addSmelting(ABlocks.Tin_Ore,new ItemStack(AItems.Tin_Ingot), 0.3F);
 		GameRegistry.addSmelting(ABlocks.Titanium_Ore,new ItemStack(AItems.Titanium_Ingot), 0.3F);
+	//Food
+		GameRegistry.addSmelting(AItems.Corn,new ItemStack(AItems.CookedCorn), 0.3F);
 	}
 }

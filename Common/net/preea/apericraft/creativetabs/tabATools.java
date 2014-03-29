@@ -7,8 +7,8 @@ import net.preea.apericraft.declarations.AItems;
 
 public class tabATools extends CreativeTabs {
 
-	public tabATools(int par1, String par2Str) {
-		super(par1, par2Str);
+	public tabATools(int par1, String string) {
+		super(par1, string);
 	}
 
 	@Override

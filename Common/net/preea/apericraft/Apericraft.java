@@ -7,10 +7,10 @@ import net.minecraft.init.Blocks;
 import net.preea.apericraft.creativetabs.tabABlocks;
 import net.preea.apericraft.creativetabs.tabAItems;
 import net.preea.apericraft.lib.Reference;
-import net.preea.apericraft.loadhandler.LoadBiomes;
 import net.preea.apericraft.loadhandler.LoadBlocks;
 import net.preea.apericraft.loadhandler.LoadCrafting;
 import net.preea.apericraft.loadhandler.LoadItems;
+import net.preea.apericraft.loadhandler.LoadRenderer;
 import net.preea.apericraft.world.WorldGeneratorApericraft;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -24,9 +24,13 @@ public class Apericraft{
 
     @EventHandler
     public void preinit(FMLPreInitializationEvent event){
+    	//Renderers
+    	LoadRenderer.RenderRegistery();
     	//Blocks
     	LoadBlocks.ore();
     	LoadBlocks.blocks();
+    	LoadBlocks.Crops();
+    	LoadBlocks.earth();
     	//Items
     	LoadItems.Ingots();
     	LoadItems.Dusts();
@@ -35,6 +39,12 @@ public class Apericraft{
     	LoadItems.Pickaxes();
     	LoadItems.Hoes();
     	LoadItems.Axes();
+    	LoadItems.Seeds();
+    	LoadItems.Food();
+    	LoadItems.Armor_Helmet();
+    	LoadItems.Armor_Legs();
+    	LoadItems.Armor_Chestplate();
+    	LoadItems.Armor_Boots();
     	//Crafting
     	LoadCrafting.Shaped();
     	LoadCrafting.Shapeless();

@@ -21,5 +21,9 @@ public class ABlocks {
 	public static Block Silver_Block;
 	public static Block Titanium_Block;
 	public static Block Greenstone_Block;
+	//Earth
+	public static Block Green_Infused_Soil;
+	//Crops
+	public static Block Corn_Block;
 
 }
